@@ -1,0 +1,40 @@
+body {
+    background-color: aqua;
+}
+
+h1 {
+    text-align: center;
+    margin: 15px;
+    color: brown;
+    margin-top: 4%;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px;
+    color: purple;
+    margin-top: 8%;
+}
+
+p {
+    text-align: center  ;
+    width: 50%;
+    margin-left: 25%;
+}
+
+#imagem1 {
+    border-radius: 5px 5px 0 0;
+    margin-left: 34%;
+    
+}
+
+#imagem2 {
+    border-radius: 5px 5px 0 0;
+    margin-left: 33%;
+    height: 100rem;
+    text-align: left;
+    width: 10rem;
+    
+    
+}
+

@@ -1,0 +1,18 @@
+
+
+.card{
+    height: 300px;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
+div img{
+    width: 50%;
+    height: 50%;
+
+}
+
+
