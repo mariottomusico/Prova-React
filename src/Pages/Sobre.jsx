@@ -18,8 +18,6 @@ const Sobre = () => {
     <img src="https://lojazmart.com/media/catalog/product/cache/1/image/363x/040ec09b1e35df139433887a97daa66f/m/e/mel_ncia_inteira_zmart.jpg" alt="" />
     </div>
     </>
-    
-
   )
 }
 
