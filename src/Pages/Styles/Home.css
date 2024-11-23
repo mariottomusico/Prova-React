@@ -1,5 +1,5 @@
-body {
-    background-color: aqua;
+.principal { 
+    background-color: beige;
 }
 
 h1 {
@@ -12,29 +12,36 @@ h1 {
 h2 {
     text-align: center;
     margin: 20px;
-    color: purple;
+    color: brown;
     margin-top: 8%;
 }
 
-p {
+h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.texto {
     text-align: center  ;
     width: 50%;
     margin-left: 25%;
+    margin-bottom: 2rem; 
 }
 
-#imagem1 {
-    border-radius: 5px 5px 0 0;
-    margin-left: 34%;
-    
+.imagem1 {
+    border-radius: 5px 5px 0 0; /* Bordas arredondadas nos cantos superiores */
+    border: 2px solid #ccc; /* Adiciona uma borda */
+    display: block; /* Garante que a imagem seja tratada como um bloco */
+    margin: 0 auto; /* Centraliza horizontalmente */
 }
 
-#imagem2 {
-    border-radius: 5px 5px 0 0;
-    margin-left: 33%;
-    height: 100rem;
-    text-align: left;
-    width: 10rem;
-    
-    
+
+.imagem2 {
+    border-radius: 5px 5px 0 0; /* Bordas arredondadas nos cantos superiores */
+    height: 35%; /* Altura da imagem */
+    width: 35%; /* Largura da imagem */
+    display: block; /* Garante que a imagem seja tratada como um bloco */
+    margin: 0 auto; /* Centraliza horizontalmente */
 }
+
 

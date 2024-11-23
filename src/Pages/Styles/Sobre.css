@@ -1,5 +1,26 @@
-body {
-    background-color: aqua;
+.fundo {
+    background-color: beige;
 }
 
+.texto {
+    text-align: center  ;
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 2rem; 
+}
 
+.infos {
+    text-align: left;
+
+
+}
+
+.imagem1 {
+    width: 25rem;
+    height: 25rem;
+}
+
+.infos2 {
+    color: black;
+    text-align: left;
+}
