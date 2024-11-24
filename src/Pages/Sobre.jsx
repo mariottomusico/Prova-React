@@ -1,6 +1,6 @@
 import React from 'react'
 import'./Styles/Sobre.css'
-import Navbar from '../../../src/Components/Navbar/Navbar'
+import Navbar from '../Components/Navbar/Navbar'
 
 const Sobre = () => {
   return (

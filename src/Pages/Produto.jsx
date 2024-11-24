@@ -1,8 +1,12 @@
 import React from 'react'
 import CardProduto from '../Components/card-produto/CardProduto'
 import "./Styles/Produto.css"
+import Navbar from '../Components/Navbar/Navbar'
+
+
 
 const Produto = () => {
+   
   
 
     const frutas = [
@@ -107,6 +111,7 @@ const Produto = () => {
 
   return (
     <div className='fundo'>
+        <Navbar/>
     <>
     <h1>Nossos Produtos:</h1>
     <div className='produtos'>
