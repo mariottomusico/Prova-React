@@ -46,7 +46,7 @@ Slogan<br/>
 </p>
     <div>
       
-      <img src="https://files.oaiusercontent.com/file-CoDG2DJBtoFrigFyf9PbH9?se=2024-11-23T20%3A00%3A34Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D96f95063-f2a0-46c8-b2c3-515a6f86724d.webp&sig=i2V9UmhlILCuNDyIv1xIpEydy3qqJv4J4qfUcwuuc7Q%3D" className='imagem1'/>
+      <img src="https://images.vexels.com/content/181768/preview/kiwifruit-hand-drawn-a34202.png" className='imagem1'/>
       
       
       

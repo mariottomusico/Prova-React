@@ -18,7 +18,7 @@ HortiOnline: o frescor que você confia, onde você estiver. 🌱
 Comece agora e aproveite nossas ofertas exclusivas! 🛒</p>
     <div>
       
-      <img src="https://files.oaiusercontent.com/file-CoDG2DJBtoFrigFyf9PbH9?se=2024-11-23T20%3A00%3A34Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D96f95063-f2a0-46c8-b2c3-515a6f86724d.webp&sig=i2V9UmhlILCuNDyIv1xIpEydy3qqJv4J4qfUcwuuc7Q%3D" className='imagem1'/>
+      <img src="https://images.vexels.com/content/181768/preview/kiwifruit-hand-drawn-a34202.png" className='imagem1'/>
       
       
     
@@ -28,7 +28,7 @@ Comece agora e aproveite nossas ofertas exclusivas! 🛒</p>
     <h2>Oferta do dia!</h2>
     <h3>Banana NANICA! R$ 2.99 a unidade!</h3>
     
-    <img src="https://www.hortifrutiorganico.com.br/121-large_default/banana-organica-prata-1-kg.jpg" className='imagem2'/>
+    <img src="https://i5.walmartimages.com/seo/Fresh-Banana-Fruit-Each_5939a6fa-a0d6-431c-88c6-b4f21608e4be.f7cd0cc487761d74c69b7731493c1581.jpeg" className='imagem2'/>
     
     
     </div> 

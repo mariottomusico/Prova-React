@@ -7,6 +7,7 @@ h1 {
     margin: 15px;
     color: brown;
     margin-top: 4%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h2 {
@@ -14,11 +15,13 @@ h2 {
     margin: 20px;
     color: brown;
     margin-top: 8%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h3 {
     text-align: center;
     margin-bottom: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .texto {
@@ -26,6 +29,7 @@ h3 {
     width: 50%;
     margin-left: 25%;
     margin-bottom: 2rem; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .imagem1 {
@@ -42,6 +46,13 @@ h3 {
     width: 35%; /* Largura da imagem */
     display: block; /* Garante que a imagem seja tratada como um bloco */
     margin: 0 auto; /* Centraliza horizontalmente */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza a transição */
+}
+
+.imagem2:hover {
+    transform: scale(1.1); /* Aumenta a escala em 10% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra */
+    opacity: 0.9; /* Reduz um pouco a opacidade */
 }
 
 
