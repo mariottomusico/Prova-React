@@ -1,7 +1,7 @@
 import React from 'react'
 import'./Input.css'
 
-function Input({type, text,name,placeholder,handleOnChange, value}) {
+function Input({type, text,name,placeholder,OnChange, value}) {
   return (
     <div className='formulario_control'>
         <label htmlFor={name}>{text} :</label>
@@ -9,7 +9,7 @@ function Input({type, text,name,placeholder,handleOnChange, value}) {
             name={name}
             id={name} 
             placeholder={placeholder}
-            onChange={handleOnChange}
+            onChange={OnChange}
             value={value} 
         />
       

@@ -6,8 +6,7 @@ function Cadastro() {
   return (
     <div>
       <Navbar/>
-      <h1>se inscrever</h1>
-      <p>preencha os campos abaixo:</p>
+ 
       <Formulario/>
       
       
