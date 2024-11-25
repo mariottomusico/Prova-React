@@ -66,7 +66,7 @@ const Formulario = () => {
       {activeForm === 'cliente' && (
         <div id='container-cliente'>
           <form className="Cliente">
-            <Input
+            <input
               type="text"
               text="nome"
               name="name"
@@ -74,7 +74,7 @@ const Formulario = () => {
               value={nomeCliente}
               onChange={(e) => setNomeCliente(validDigits(e.target.value))}
             />
-            <Input
+            <input
               type="number"
               text="cpf"
               name="cpf"
@@ -82,7 +82,7 @@ const Formulario = () => {
               value={cpfCliente}
               onChange={(e) => setCpfCliente(validDigits(e.target.value))}
             />
-            <Input
+            <input
               type="number"
               text="telefone"
               name="telefone"
@@ -90,7 +90,7 @@ const Formulario = () => {
               value={telefoneCliente}
               onChange={(e) => setTelefoneCliente(validDigits(e.target.value))}
             />
-            <Input
+            <input
               type="text"
               text="email"
               name="email"
@@ -108,7 +108,7 @@ const Formulario = () => {
       {activeForm === 'fornecedor' && (
         <div id='container-fornecedor'>
           <form className="fornecedor">
-            <Input
+            <input
               type="text"
               text="nome"
               name="name"
@@ -116,7 +116,7 @@ const Formulario = () => {
               value={nomeFornecedor}
               onChange={(e) => setNomeFornecedor(validDigits(e.target.value))}
             />
-            <Input
+            <input
               type="number"
               text="cnpj"
               name="cnpj"
@@ -124,7 +124,7 @@ const Formulario = () => {
               value={cnpjFornecedor}
               onChange={(e) => setCnpjFornecedor(validDigits(e.target.value))}
             />
-            <Input
+            <input
               type="number"
               text="telefone"
               name="telefone"
@@ -132,7 +132,7 @@ const Formulario = () => {
               value={telefoneFornecedor}
               onChange={(e) => setTelefoneFornecedor(validDigits(e.target.value))}
             />
-            <Input
+            <input
               type="text"
               text="email"
               name="email"
