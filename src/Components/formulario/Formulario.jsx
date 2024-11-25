@@ -5,8 +5,9 @@ import Select from './Select';
 import Botao from './Botao';
 import axios from 'axios';
 
-// Função de validação dos CPF e CNPJ
+
 const validDigits = (text) => text.replace(/[^0-9,]/g, "");
+const validNome = (text) => text.replace(/[^a-zA-ZáéíóúãõçÇ\s]/g, "");
 const validEmail = (text) => text.replace(/[^a-zA-Z0-9@._-]/g, "");
 
 const validCpf = async (cpf, setStatusCpf) => {
@@ -72,7 +73,7 @@ const Formulario = () => {
               name="name"
               placeholder="insira o seu nome"
               value={nomeCliente}
-              onChange={(e) => setNomeCliente(validDigits(e.target.value))}
+              onChange={(e) => setNomeCliente(validNome(e.target.value))}
             />
             <input
               type="number"
@@ -114,7 +115,7 @@ const Formulario = () => {
               name="name"
               placeholder="insira o seu nome"
               value={nomeFornecedor}
-              onChange={(e) => setNomeFornecedor(validDigits(e.target.value))}
+              onChange={(e) => setNomeFornecedor(validNome(e.target.value))}
             />
             <input
               type="number"
