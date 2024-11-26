@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './Formulario.css';
-import Input from './Input';
 import Select from './Select';
 import Botao from './Botao';
 import axios from 'axios';
@@ -16,13 +15,17 @@ const validCpf = async (cpf, setStatusCpf) => {
     let url = `https://api.invertexto.com/v1/validator?token=16300%7CF90CvSnbzzuzcpqYoE1FpYtL4QueMFun&value=${cpf}&type=cpf`;
     const response = await axios.get(url);
     if (response.data.valid) {
-      setStatusCpf("CPF válido!");
+      
+      return true;
     } else {
-      setStatusCpf("CPF inválido!");
+      alert("CPF inválido! Por favor, insira um CPF válido.");
+      return false;
     }
   } catch (error) {
     console.log(error);
-    setStatusCpf("Erro ao validar o CPF");
+    
+    alert("Erro ao validar o CPF. Tente novamente mais tarde.");
+    return false;
   }
 };
 
@@ -32,13 +35,18 @@ const validCnpj = async (cnpj, setStatusCnpj) => {
     let url = `https://api.invertexto.com/v1/validator?token=16300%257CF90CvSnbzzuzcpqYoE1FpYtL4QueMFun&value=${cnpj}&type=cnpj`;
     const response = await axios.get(url);
     if (response.data.valid) {
-      setStatusCnpj("CNPJ válido!");
+      
+      return true;
     } else {
-      setStatusCnpj("CNPJ inválido!");
+      
+      alert("CNPJ inválido! Por favor, insira um CNPJ válido.");
+      return false;
     }
   } catch (error) {
     console.log(error);
-    setStatusCnpj("Erro ao validar o CNPJ");
+    
+    alert("Erro ao validar o CNPJ. Tente novamente mais tarde.");
+    return false;
   }
 };
 
@@ -50,10 +58,12 @@ const validarEmail = async (email) => {
     if (response.data.valid_format) {
       return true;  
     } else {
+      alert("Email inválido! Por favor, insira um email válido.");
       return false;  
     }
   } catch (error) {
     console.log(error);
+    alert("Erro ao validar o email. Tente novamente mais tarde.");
     return false; 
   }
 };
@@ -87,10 +97,11 @@ const Formulario = () => {
 
   // função para alternar entre os formulários
   const showOrHide = (elemento) => {
+    setCpfCliente("")
+    setCnpjFornecedor("")
     setActiveForm(elemento);  // muda o estado do formulário ativo
   };
 
-  
   const validarTudoCliente = async (e) => {
     e.preventDefault();
     
@@ -99,16 +110,15 @@ const Formulario = () => {
     }
 
     if (!(await validarEmail(emailCliente))) {
-      setStatusEmail("Email inválido!");
+      
       return;
     }
 
-    setStatusEmail("Email válido!");
+   
     alert("Cadastro de cliente concluído!");
     clearForm(e, setNomeCliente, setCpfCliente, setTelefoneCliente, setEmailCliente);
   };
 
-  
   const validarTudoFornecedor = async (e) => {
     e.preventDefault();
 
@@ -117,11 +127,9 @@ const Formulario = () => {
     }
 
     if (!(await validarEmail(emailFornecedor))) {
-      setStatusEmail("Email inválido!");
       return;
     }
 
-    setStatusEmail("Email válido!");
     alert("Cadastro de fornecedor concluído!");
     clearForm(e, setNomeFornecedor, setCnpjFornecedor, setTelefoneFornecedor, setEmailFornecedor);
   };
