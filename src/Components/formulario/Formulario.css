@@ -1,4 +1,105 @@
-.form{
-    width: 100%;
-    margin: 2em 0;
-}
+    
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: beige; 
+    color: #333;
+  }
+
+
+.container-cadastro {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: beige;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container-cadastro h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  
+  .botoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .botoes button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: brown;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .botoes button:hover {
+    background-color: green;
+  }
+  
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  form input:focus {
+    border-color: green;
+    outline: none;
+  }
+  
+ 
+  form button,
+  form .botao {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: brown;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover,
+  form .botao:hover {
+    background-color: green;
+  }
+  
+  form .botao-limpar {
+    background-color: brown;
+  }
+  
+  form .botao-limpar:hover {
+    background-color: brown;
+  }
+  
+
+  p {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  p:empty {
+    display: none;
+  }

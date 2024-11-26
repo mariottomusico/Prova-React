@@ -17,12 +17,12 @@
     box-sizing: border-box;
     border: 1px solid black;
     transition: transform 0.3s, box-shadow 0.3s;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Adiciona a fonte ao card */
-    text-align: center; /* Centraliza o texto */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    text-align: center; 
 }
 
 .card h1, .card p {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Define uma fonte específica para os textos do card */
-    font-size: 1rem; /* Ajusta o tamanho da fonte */
-    color: #333; /* Altera a cor do texto */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-size: 1rem; 
+    color: #333; 
 }
