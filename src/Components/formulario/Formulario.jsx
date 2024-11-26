@@ -30,9 +30,9 @@ const validCpf = async (cpf, setStatusCpf) => {
 };
 
 // Função de validação do CNPJ
-const validCnpj = async (cnpj, setStatusCnpj) => {
+const validCnpj = async (cnpj) => {
   try {
-    let url = `https://api.invertexto.com/v1/validator?token=16300%257CF90CvSnbzzuzcpqYoE1FpYtL4QueMFun&value=${cnpj}&type=cnpj`;
+    let url = `https://api.invertexto.com/v1/validator?token=16300%7CF90CvSnbzzuzcpqYoE1FpYtL4QueMFun&value=${cnpj}&type=cnpj`;
     const response = await axios.get(url);
     if (response.data.valid) {
       
