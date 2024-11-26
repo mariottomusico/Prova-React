@@ -1,0 +1,91 @@
+.fundo {
+    background-color:beige;
+    padding: 4rem 2rem;
+  }
+  
+  .hero-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #3e721d;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .card {
+    width: 280px; 
+    height: 550px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .card h1 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #3e721d;
+    margin: 10px 0;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .card span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #3e721d;
+  }
+  
+  /* Responsividade para telas maiores */
+  @media (min-width: 768px) {
+    .card {
+      width: 280px; /* Exibe mais cards, mas com uma largura um pouco menor */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .card {
+      width: 320px; /* Exibe menos cards por linha, com maior largura */
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .card {
+      width: 350px; /* Em telas muito grandes, o card vai ter 350px */
+    }
+  }
+  

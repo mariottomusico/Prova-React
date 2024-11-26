@@ -1,0 +1,72 @@
+/* Reset básico */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Container principal */
+.home-container {
+  max-width: auto;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar */
+nav {
+  background-color: #667c35;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-title {
+  font-size: 46px;
+  color: #667c35;
+  margin-bottom: 15px;
+}
+
+.hero-text {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.hero-image {
+  width: 40%;
+  border-radius: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero-image {
+    width: 80%;
+  }
+}

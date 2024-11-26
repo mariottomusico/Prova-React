@@ -1,0 +1,89 @@
+.fundo {
+    background-color: #f4f8f2;
+    padding: 4rem 2rem;
+  }
+  
+  .hero {
+    background-color: #f4f8f2;
+    padding: 4rem 2rem;
+    text-align: left;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+  }
+  
+  .hero-content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .hero-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #3e721d;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .hero-text {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .hero-text.highlight-text {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 25px;
+    text-align: left;
+  }
+  
+  .hero-text.hero-footer {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #3e721d;
+    margin-bottom: 25px;
+  }
+  
+  
+  
+  .daily-offers {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .offers-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #3e721d;
+  }
+  
+  .infos {
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-top: 20px;
+  }
+  
+  .infos2 {
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  
+  .infos2 h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
