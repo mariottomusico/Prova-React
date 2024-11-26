@@ -5,14 +5,16 @@ import Select from './Select';
 import Botao from './Botao';
 import axios from 'axios';
 
+//16300|F90CvSnbzzuzcpqYoE1FpYtL4QueMFun
 
 const validDigits = (text) => text.replace(/[^0-9,]/g, "");
 const validNome = (text) => text.replace(/[^a-zA-ZáéíóúãõçÇ\s]/g, "");
 const validEmail = (text) => text.replace(/[^a-zA-Z0-9@._-]/g, "");
 
-const validCpf = async (cpf, setStatusCpf) => {
+const validCpf = async (e, cpf, setStatusCpf) => {
+  e.preventDefault()
   try {
-    let url = `https://api.invertexto.com/v1/validator?type=cpf&cpf=${cpf}`;
+    let url = `https://api.invertexto.com/v1/validator?token=16300%7CF90CvSnbzzuzcpqYoE1FpYtL4QueMFun&value=${cpf}&type=cpf`;
     const response = await axios.get(url);
     if (response.data.valid) {
       setStatusCpf("CPF válido!");
@@ -24,6 +26,23 @@ const validCpf = async (cpf, setStatusCpf) => {
     setStatusCpf("Erro ao validar o CPF");
   }
 };
+
+const validarEmail =  async (email) =>{
+  try {
+    let url = `https://api.invertexto.com/v1/email-validator/${email}?token=16300|F90CvSnbzzuzcpqYoE1FpYtL4QueMFun`;
+    const response = await axios.get(url);
+    if (response.data.valid_format) {
+      alert("email válido!");
+    } else {
+      alert("email inválido!");
+    }
+  } catch (error) {
+    console.log(error);
+    alert("Erro ao validar o email");
+  }
+}
+
+
 
 // Função de limpar os campos dos formulários
 const clearForm = (e, setNome, setCpf, setTelefone, setEmail) => {
@@ -55,6 +74,20 @@ const Formulario = () => {
     setActiveForm(elemento);  // Muda o estado do formulário ativo
   };
 
+  const validarTudoCliente = async (e) =>{
+    e.preventDefault()
+    
+    if(!(await validarEmail(emailCliente))){
+      return
+    }
+
+    if(!(await validCpf(cpfCliente))){
+      return;
+    }
+    alert("cadastro concluido")
+    clearForm()
+  }
+
   return (
     <div className='container-cadastro'>
       <h1>Cadastro</h1>
@@ -62,6 +95,8 @@ const Formulario = () => {
         <button onClick={() => showOrHide("cliente")}>Cliente</button>
         <button onClick={() => showOrHide("fornecedor")}>Fornecedor</button>
       </div>
+
+      <p>{statusCpf}</p>
 
       {/* Formulário Cliente */}
       {activeForm === 'cliente' && (
@@ -99,7 +134,7 @@ const Formulario = () => {
               value={emailCliente}
               onChange={(e) => setEmailCliente(validEmail(e.target.value))}
             />
-            <Botao text="cadastrar" action={() => validCpf(cpfCliente, setStatusCpf)} />
+            <button onClick={(e) => validarTudoCliente(e)}>Cadastrar</button>
             <Botao text="limpar" action={(e) => clearForm(e, setNomeCliente, setCpfCliente, setTelefoneCliente, setEmailCliente)} />
           </form>
         </div>

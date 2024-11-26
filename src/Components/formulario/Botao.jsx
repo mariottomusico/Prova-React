@@ -1,10 +1,10 @@
 import React from 'react'
 import'./Botao.css'
 
-function Botao({text}) {
+function Botao({text , action}) {
   return (
     <div>
-      <button className='btn'>{text}</button>
+      <button className='btn' onClick={action}>{text}</button>
     </div>
   )
 }
